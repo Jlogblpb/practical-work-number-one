@@ -116,9 +116,8 @@ Git хранит таблицу соответствий хеш → информ
 
 ```mermaid
 graph LR;
-  untracked -- "git add" --> staged tracked;
-  staged tracked --" git commit"--> tracked;
-
+  untracked -- "git add" --> staged+tracked;
+  staged+tracked --" git commit"--> tracked;
 ```
 
 
