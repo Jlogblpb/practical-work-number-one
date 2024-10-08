@@ -14,7 +14,7 @@ API содержит следующие операции:
 Задания повышенной трудности не выполнялись.
 
 Для запуска кода необходимо в терминале, в директории с проектом ввести команду go run ./...
-В браузере необходимо ввести адрес: ***http://localhost:7540/***
+В браузере необходимо ввести адрес: ```http://localhost:7540/```
 
 Для запуска тестов использовать следующие команды:
 
@@ -23,22 +23,22 @@ API содержит следующие операции:
  Виду того что задания повышенной сложности не выполнялись, в директории с тестами в файле settings.go 
  значение переменной FullNextDate должно быть false.
  Так же можно проверить значения других переменных:
- Port = 7540;
- DBFile = "../scheduler.db";
- Search = false;
- Token = ``.
+ ```Port = 7540```;
+ ```DBFile = "../scheduler.db"```;
+ ```Search = false```;
+ ```Token = `` ```.
 
 Сброс кеша тестов в случае если тесты запускались ранее: 
 
-go clean -testcache
+```go clean -testcache```
 
 Тесты можно запускать как по одному, так и все сразу, скопировав все 9 строк и вставив их в терминал:
-go test -run ^TestApp$ ./tests<br>
-go test -run ^TestDB$ ./tests<br>
-go test -run ^TestNextDate$ ./tests<br>
-go test -run ^TestAddTask$ ./tests<br>
-go test -run ^TestTasks$ ./tests<br>
-go test -run ^TestTask$ ./tests<br>
-go test -run ^TestEditTask$ ./tests<br>
-go test -run ^TestDone$ ./tests<br>
-go test -run ^TestDelTask$ ./tests<br>
+```go test -run ^TestApp$ ./tests```<br>
+```go test -run ^TestDB$ ./tests```<br>
+```go test -run ^TestNextDate$ ./tests```<br>
+```go test -run ^TestAddTask$ ./tests```<br>
+```go test -run ^TestTasks$ ./tests```<br>
+```go test -run ^TestTask$ ./tests```<br>
+```go test -run ^TestEditTask$ ./tests```<br>
+```go test -run ^TestDone$ ./tests```<br>
+```go test -run ^TestDelTask$ ./tests```<br>
