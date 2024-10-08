@@ -51,12 +51,14 @@ http://localhost:7540/
 ```go clean -testcache```
 
 Тесты можно запускать как по одному, так и все сразу, скопировав все 9 строк и вставив их в терминал:
-```go test -run ^TestApp$ ./tests```
-```go test -run ^TestDB$ ./tests```
-```go test -run ^TestNextDate$ ./tests```
-```go test -run ^TestAddTask$ ./tests```
-```go test -run ^TestTasks$ ./tests```
-```go test -run ^TestTask$ ./tests```
-```go test -run ^TestEditTask$ ./tests```
-```go test -run ^TestDone$ ./tests```
-```go test -run ^TestDelTask$ ./tests```
+```
+go test -run ^TestApp$ ./tests
+go test -run ^TestDB$ ./tests
+go test -run ^TestNextDate$ ./tests
+go test -run ^TestAddTask$ ./tests
+go test -run ^TestTasks$ ./tests
+go test -run ^TestTask$ ./tests
+go test -run ^TestEditTask$ ./tests
+go test -run ^TestDone$ ./tests
+go test -run ^TestDelTask$ ./tests
+```
