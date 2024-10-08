@@ -1,9 +1,7 @@
 ##Веб-сервер на Go, который реализует функциональность простейшего планировщика задач.
+---
     
-    Планировщик хранит задачи, каждая из них содержит дату дедлайна и заголовок с комментарием. 
-    Задачи могут повторяться по заданному правилу: например, ежегодно, через какое-то количество 
-    дней. Если отметить такую задачу как выполненную, она переносится на следующую дату в соответствии
-    с правилом. Обычные задачи при выполнении просто удаляются. 
+Планировщик хранит задачи, каждая из них содержит дату дедлайна и заголовок с комментарием. Задачи могут повторяться по заданному правилу: например, ежегодно, через какое-то количество дней. Если отметить такую задачу как выполненную, она переносится на следующую дату в соответствии с правилом. Обычные задачи при выполнении просто удаляются. 
     
 API содержит следующие операции:
 - добавить задачу;
@@ -35,12 +33,12 @@ API содержит следующие операции:
 go clean -testcache
 
 Тесты можно запускать как по одному, так и все сразу, скопировав все 9 строк и вставив их в терминал:
-go test -run ^TestApp$ ./tests
-go test -run ^TestDB$ ./tests
-go test -run ^TestNextDate$ ./tests
-go test -run ^TestAddTask$ ./tests
-go test -run ^TestTasks$ ./tests
-go test -run ^TestTask$ ./tests
-go test -run ^TestEditTask$ ./tests
-go test -run ^TestDone$ ./tests
-go test -run ^TestDelTask$ ./tests
+go test -run ^TestApp$ ./tests<br>
+go test -run ^TestDB$ ./tests<br>
+go test -run ^TestNextDate$ ./tests<br>
+go test -run ^TestAddTask$ ./tests<br>
+go test -run ^TestTasks$ ./tests<br>
+go test -run ^TestTask$ ./tests<br>
+go test -run ^TestEditTask$ ./tests<br>
+go test -run ^TestDone$ ./tests<br>
+go test -run ^TestDelTask$ ./tests<br>
